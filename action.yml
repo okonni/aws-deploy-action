@@ -1,0 +1,9 @@
+name: "AWS Deploy Action"
+description: "Build Jekyll distribution using bundler, syncs dist folder to an AWS S3 bucket and invalidates a AWS CloudFront distribution."
+author: mirceapreotu
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: upload-cloud
+  color: green
