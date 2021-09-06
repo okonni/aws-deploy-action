@@ -1,6 +1,6 @@
-name: "AWS Deploy Action"
-description: "Build distribution using npm, syncs dist folder to an AWS S3 bucket and invalidates a AWS CloudFront distribution."
-author: mirceapreotu
+name: "Deploy okonni website on AWS"
+description: "Builds static html files from Handlebars templates using npm, syncs dist folder to an AWS S3 bucket, invalidates an AWS CloudFront distribution, deploys Lambda functions using Serverless."
+author: okonni
 runs:
   using: docker
   image: Dockerfile
