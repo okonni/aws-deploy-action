@@ -59,7 +59,7 @@ sh -c "npm install" \
               --profile aws-deploy-action \
               --no-progress \
               --delete
-              --metadata '{\"Cache-Control\":\"max-age=31536000\"}'"
+              --cache-control max-age=31536000"
 SUCCESS=$?
 
 if [ $SUCCESS -eq 0 ]
