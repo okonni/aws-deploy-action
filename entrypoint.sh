@@ -58,7 +58,8 @@ sh -c "npm install" \
 && sh -c "aws s3 sync dist s3://${AWS_S3_BUCKET}/${AWS_S3_BUCKET_FOLDER} \
               --profile aws-deploy-action \
               --no-progress \
-              --delete"
+              --delete
+              --metadata '{\"Cache-Control\":\"max-age=31536000\"}'"
 SUCCESS=$?
 
 if [ $SUCCESS -eq 0 ]
